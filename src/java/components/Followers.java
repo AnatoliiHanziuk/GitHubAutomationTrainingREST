@@ -12,10 +12,11 @@ import static io.restassured.RestAssured.given;
 public class Followers {
 
     public Response getUserFollowers(String userName) {
-        return given()
+        Response response = given()
                 .contentType("application/json")
                 .when()
                 .get("/users/" + userName.toLowerCase() + "/followers");
+        return response;
     }
 
     public JSONArray getUserFollowersNames(String userName) {

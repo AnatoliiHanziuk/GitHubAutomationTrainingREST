@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="GitDemo">
+
+    <parameter name="userName" value="testuser1"/>
+    <parameter name="userId" value="704535"/>
+    <parameter name="amountOfUserRepos" value="9"/>
+    <parameter name="amountOfUserFollowers" value="3"/>
+    <parameter name="amountOfUserFollowing" value="6"/>
+    <test name="UserTest">
+        <classes>
+            <class name="steps.UserTests" />
+        </classes>
+    </test>
+
+    <parameter name="expectedFollowers" value="ekdevdes, PivotLogix, shilch"/>
+    <test name="FollowersTest">
+        <classes>
+            <class name="steps.FollowersTests" />
+        </classes>
+    </test>
+
+</suite>
