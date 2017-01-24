@@ -10,8 +10,6 @@ import static io.restassured.RestAssured.given;
  */
 public class User {
 
-    private Response response = null;
-
     public Response getUser(String userName) {
         return  given()
                 .contentType("application/json")
