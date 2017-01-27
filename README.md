@@ -7,7 +7,13 @@ POC of Java based framework for REST API testing of GitHub.
 * Java 8
 * Maven
 
-All required dependencies are in pom.xml file.
+#### Dependencies
+
+  restAssured 3.0.0
+  jsonSmart 2.2.1
+  jsonPath 2.2.0
+  assertJ 1.7.0
+  testNG 6.9.8
 
 #### Running:
 
